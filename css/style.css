@@ -1,0 +1,125 @@
+body {
+    font-family: Lato;
+    font-size: 18px;
+}
+
+.logoContainer {
+    padding: 30px 0 17px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 268px;
+}
+
+.btn-icon {
+    position: relative;
+    left: -40px;
+    border: none;
+}
+
+.search-input {
+    background-color: #E7E7E7;
+    border-radius: 0;
+}
+
+.btn-device {
+    background-color: #68D9A4;
+    color: white;
+}
+
+.btn-ustensil {
+    background-color: #ED6454;
+    color: white;
+}
+
+.btn.btn-primary {
+    background-color: #3282F7;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.buttonContainer .btn {
+    margin: 20px 10px 20px 0;
+}
+
+.dropdown-menu.columns-3 {
+	min-width: 600px;
+}
+
+.dropdown-menu li a {
+	padding: 5px 15px;
+	font-weight: 300;
+}
+.multi-column-dropdown {
+	list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+.multi-column-dropdown li a {
+	display: block;
+	clear: both;
+	line-height: 1.428571429;
+	color: #333;
+	white-space: normal;
+}
+.multi-column-dropdown li a:hover {
+	text-decoration: none;
+	color: #262626;
+	background-color: #999;
+}
+
+i.fa.fa-search {
+    color: black;
+}
+
+.card {
+    width: 380px;
+    height: 178px;
+}
+
+.card-recette {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    line-height:14.4px
+}
+
+.card-left, .card-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: row;
+}
+
+.card-text > * {
+    flex: 1 1 0;
+}
+
+.card-right, .card-description {
+    display: flex;
+    align-items: end;
+}
+
+.card-title,.card-duration {
+    font-weight: 700;
+}
+
+.card-duration {
+    padding-right: 12px;
+    font-weight: 700;
+}
+
+.card-description {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+}
