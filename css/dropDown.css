@@ -16,6 +16,7 @@
     color: inherit;
     border-radius: 5px;
     padding-right: 54px;
+    width: 100%;
 }
 
 .dropdown__list {
@@ -31,7 +32,8 @@
     z-index: 2;
     position: absolute;
     right: 21px;
-    top: 20px;
+    top: 22px;
+    pointer-events: none;
 }
 
 .dropdown__input {

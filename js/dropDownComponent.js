@@ -94,14 +94,14 @@ export default function dropDownComponent(
     onSelect(value);
   });
 
-  // rootElement.closest('body').addEventListener('click', (e) => {
-  //   const { target } = e;
-  //   if (rootElement.contains(target)) {
-  //     return;
-  //   }
+  rootElement.closest('body').addEventListener('click', (e) => {
+    const { target } = e;
+    if (rootElement.contains(target)) {
+      return;
+    }
 
-  //   close();
-  // });
+    close();
+  });
 
   populateList();
 

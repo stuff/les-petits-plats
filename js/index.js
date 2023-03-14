@@ -5,14 +5,13 @@ import recipesData from '/data/recipesData.js';
 
 
 const ingredients = recipesData.reduce((acc, current) => {
-    const i = current.ingredients;
     current.ingredients.forEach(element => {
         if (acc.includes(element.ingredient)) {
             return false;
         }
         acc.push(element.ingredient);
     });
-    return acc;jkhkdjsh
+    return acc;
 }, []).sort();
 
 const targetElement = document.getElementById('dropdown-target');
@@ -29,12 +28,6 @@ const component = dropDownComponent(targetElement, {
 });
 
 
-const bt = document.getElementById('bt');
-bt.addEventListener('click', () => {
-    component.toggle();
-});
-
-
 dropDownComponent(targetElement2, {
     label: 'Test',
     color: 'red',
@@ -43,4 +36,9 @@ dropDownComponent(targetElement2, {
     onSelect(selectedItem) {
         console.log(selectedItem);
     }
+});
+
+const bt = document.getElementById('bt');
+bt.addEventListener('click', () => {
+    component.toggle();
 });
