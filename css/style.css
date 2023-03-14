@@ -41,6 +41,8 @@ body {
 .buttonContainer {
     display: flex;
     flex-direction: row;
+    padding: 16px 0;
+    gap: 16px;
 }
 
 .buttonContainer .btn {
